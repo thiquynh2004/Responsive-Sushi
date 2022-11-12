@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="stylesheet" href="" -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/sushi.css" />
+    <title>Sushi</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <!-- <div class="container"> -->
+        <a href="#" class="logo">
+          <img src="./asset/image/logo.png" alt="logo" class="logo" />Sushi
+        </a>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#popular" class="nav-link">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a href="#recently" class="nav-link">Recently</a>
+            </li>
+          </ul>
+          <div class="nav-close" id="nav-close">
+            <i class="fa fa-times"></i>
+          </div>
+
+          <img
+            class="nav-img-1"
+            src="./asset/image/leaf-branch-4.png"
+            alt="image_1"
+          />
+          <img
+            class="nav-img-2"
+            src="./asset/image/leaf-branch-3.png"
+            alt="image"
+          />
+        </div>
+
+        <div class="nav-button">
+          <!-- change theme -->
+          <i class="fa fa-moon change-theme"></i>
+          <i class="fa fa-sun change-theme"></i>
+          <!-- toggle -->
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col col-left">
+              <div class="item">
+                <img
+                  src="./asset/image/home-sushi-rolls.png"
+                  alt="sushi-rolls"
+                />
+              </div>
+            </div>
+            <div class="col col-right">
+              <div class="item">
+                <h1 class="title">
+                  Enjoy Delicious
+                  <div>
+                    <img
+                      src="./asset/image/home-sushi-title.png"
+                      alt="sushi-title"
+                    />
+                    Sushi Food
+                  </div>
+                </h1>
+                <p class="description">
+                  Enjoy a good dinner with the best dishes in the restaurant and
+                  improve your day.
+                </p>
+                <a href="" class="button">
+                  Order Now
+                  <i class="fa fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <img
+              src="./asset/image/leaf-branch-1.png"
+              alt="home-img-1"
+              class="home-img-1"
+            />
+            <img
+              src="./asset/image/leaf-branch-2.png"
+              alt="home-img-2"
+              class="home-img-2"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col col-left">
+              <div class="item">
+                <span class="section-subtitle">About us</span>
+                <h2 class="section-title about-title">
+                  We Provide
+                  <div>
+                    <img
+                      src="./asset/image/about-sushi-title.png"
+                      alt="about-title"
+                    />
+                    Healthy Food
+                  </div>
+                </h2>
+                <p class="description">
+                  Food comes to us from our relatives, whether they have wings
+                  or roots. This is how we consider food, it also has a culture.
+                  It has a history food, from generation to generation.
+                </p>
+              </div>
+            </div>
+            <div class="col col-right">
+              <img src="./asset/image/about-sushi.png" alt="about-sushi" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular" id="popular">
+        <div class="container">
+          <div class="row">
+            <div class="col col-title">
+              <span class="section-subtitle">The Best Food</span>
+              <h2 class="section-title popular-title">Popular Dishes</h2>
+            </div>
+          </div>
+          <div class="popular-container">
+            <div class="card">
+              <div class="item">
+                <img
+                  src="./asset/image/popular-onigiri.png"
+                  alt="popular-onigiri"
+                />
+                <h3>Origiri</h3>
+                <p class="description">Japanese Dishes</p>
+                <p class="price">$10.99</p>
+                <i class="fa fa-shopping-bag"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="item">
+                <img
+                  src="./asset/image/popular-spring-rols.png"
+                  alt="popular-onigiri"
+                />
+                <h3>Spring Rolls</h3>
+                <p class="description">Spring Rolls</p>
+                <p class="price">$15.99</p>
+                <i class="fa fa-shopping-bag"></i>
+              </div>
+            </div>
+            <div class="card">
+              <div class="item">
+                <img
+                  src="./asset/image/popular-sushi-rolls.png"
+                  alt="popular-onigiri"
+                />
+                <h3>Sushi Rolls</h3>
+                <p class="description">Sushi Rolls</p>
+                <p class="price">$19.99</p>
+                <i class="fa fa-shopping-bag"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recently" id="recently">
+        <div class="container">
+          <div class="row">
+            <div class="col col-left">
+              <div class="item">
+                <span class="section-subtitle">Recently Added</span>
+                <h2 class="section-title recently-title">
+                  Sushi Samurai <br />
+                  Salmon Cheese
+                </h2>
+                <p class="description">
+                  Take a look at new. And do not deprive yourself of a good
+                  meal, enjoy and be happy.
+                </p>
+                <a href="" class="button">
+                  Order Now
+                  <i class="fa fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col col-right">
+              <img
+                src="./asset/image/recently-salmon-sushi.png"
+                alt="about-sushi"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="newsletter section">
+        <div class="container">
+          <div class="row">
+            <div class="col col-left">
+              <img src="./asset/image/newsletter-sushi.png" alt="newsletter" />
+            </div>
+            <div class="col col-right">
+              <span class="section-subtitle">Newsletter</span>
+              <h2 class="section-title newsletter-title">
+                Subscribe For <br />
+                Offer Update
+              </h2>
+              <form action="#" class="newsletter-form">
+                <input
+                  type="eamil"
+                  placeholder="Enter your email"
+                  class="newsletter-input"
+                />
+                <button class="button newsletter-button">
+                  Subscribe<i class="fa fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <a href="#" class="footer-logo">
+            <img src="./asset/image/logo.png" alt="logo" />Sushi
+          </a>
+          <p class="footer-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel commodi
+            dolor mollitia voluptas maxime facilis suscipit necessitatibus illum
+            aut doloremque.
+          </p>
+        </div>
+        <div class="footer-content">
+          <div>
+            <h3 class="footer-title">Main Menu</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#" class="footer-link">About</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Menus</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Offer</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Event</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-title">Information</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#" class="footer-link">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Order and return</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Videos</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Reservation</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-title">Address</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#" class="footer-link">54 Tran Luu Street</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Thu Duc City</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-title">Social Media</h3>
+            <ul class="footer-social">
+              <a href="" target="_blank" class="footer-social-link">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="" target="_blank" class="footer-social-link">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" target="_blank" class="footer-social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </ul>
+          </div>
+          <img
+            src="./asset/image/spring-onion.png"
+            alt="orion"
+            class="footer-onion"
+          />
+          <img
+            src="./asset/image/spinach-leaf.png"
+            alt="spinach"
+            class="footer-spinach-leaf"
+          />
+          <img
+            src="./asset/image/leaf-branch-4.png"
+            alt="branch"
+            class="footer-left-branch"
+          />
+        </div>
+        <div class="footer-info">
+          <!-- <div class="container"> -->
+          <div class="footer-card">
+            <img src="./asset/image/footer-card-1.png" alt="footer-card" />
+            <img src="./asset/image/footer-card-2.png" alt="footer-card" />
+            <img src="./asset/image/footer-card-3.png" alt="footer-card" />
+            <img src="./asset/image/footer-card-4.png" alt="footer-card" />
+          </div>
+        </div>
+
+        <!-- </div> -->
+      </div>
+    </footer>
+    <button class="scroll-up" id="scroll-up">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
