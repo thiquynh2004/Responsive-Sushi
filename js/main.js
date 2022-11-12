@@ -53,7 +53,7 @@ const activeNavbar = () => {
     //lặp qua các phần tử để lấy giá trị chiều cao, id
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
-        const sectionTop= section.offsetTop-50;
+        const sectionTop= section.offsetTop-30;
         //lấy id
         sectionId = section.getAttribute('id');
         console.log('sectionId', sectionId);
