@@ -57,7 +57,6 @@ const activeNavbar = () => {
         //lấy id
         sectionId = section.getAttribute('id');
         console.log('sectionId', sectionId);
-
         if (
             scrollY > sectionTop &&
             scrollY <= sectionTop + sectionHeight
@@ -71,3 +70,49 @@ const activeNavbar = () => {
 }
 //thêm sự kiện khi scroll
 window.addEventListener('scroll', activeNavbar)
+
+
+//Change background dark - light
+
+//Lấy icon mặc định
+const themeButton = document.getElementById('change-theme')
+const darkTheme = 'dark-theme' 
+const iconTheme = 'fa-sun'
+
+// lấy chủ đề mà người dùng đã chọn (mặc định)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa fa-moon' : 'fa-sun'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'fa fa-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+  //Lưu vào local
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2000,
+  delay: 400,
+  reset: true,
+})
+scrollReveal.reveal(`.home-img, .newsletter, .footer`)
+scrollReveal.reveal(`.home-item`, {origin:'bottom'})
+scrollReveal.reveal(`.about-item,  .recently-img`, {origin:'right'})
+scrollReveal.reveal(`.about-img, .recently-item`, {origin:'left'})
+scrollReveal.reveal(`.popular-card`, {interval:'100'})
